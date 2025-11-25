@@ -4,31 +4,26 @@ public class RomanToIntSolution
 {
     public int RomanToInt(string s)
     {
-        Dictionary<char, int> romanCharDictionary = new Dictionary<char, int>()
+        static int Value(char c) => c switch
         {
-            { 'I', 1 },
-            { 'V', 5 },
-            { 'X', 10 },
-            { 'L', 50 },
-            { 'C', 100 },
-            { 'D', 500 },
-            { 'M', 1000 }
+            'I' => 1,
+            'V' => 5,
+            'X' => 10,
+            'L' => 50,
+            'C' => 100,
+            'D' => 500,
+            'M' => 1000,
+            _ => 0
         };
 
         int result = 0;
 
         for (int i = 0; i < s.Length; i++)
         {
-            int current = romanCharDictionary[s[i]];
-
-            if (i + 1 < s.Length && romanCharDictionary[s[i + 1]] > current)
-            {
-                result -= current;
-            }
+            if (i + 1 < s.Length && Value(s[i + 1]) > Value(s[i]))
+                result -= Value(s[i]);
             else
-            {
-                result += current;
-            }
+                result += Value(s[i]);
         }
 
         return result;
