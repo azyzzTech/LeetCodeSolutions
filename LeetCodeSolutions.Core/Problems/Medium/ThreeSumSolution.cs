@@ -1,4 +1,5 @@
 ﻿namespace LeetCodeSolutions.Core.Problems.Medium;
+
 public class ThreeSumSolution
 {
     public static IList<IList<int>> ThreeSum(int[] nums)
