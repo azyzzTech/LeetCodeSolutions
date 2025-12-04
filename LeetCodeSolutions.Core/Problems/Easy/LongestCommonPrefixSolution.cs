@@ -1,4 +1,5 @@
 ﻿namespace LeetCodeSolutions.Core.Problems.Easy;
+
 public static class LongestCommonPrefixSolution
 {
     public static string LongestCommonPrefix(string[] strs)
