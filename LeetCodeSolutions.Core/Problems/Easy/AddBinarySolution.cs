@@ -25,7 +25,7 @@ using System.Text;
 
 namespace LeetCodeSolutions.Core.Problems.Easy;
 
-public class AddBinarySolurion
+public class AddBinarySolution
 {
     public string AddBinary(string a, string b)
     {
