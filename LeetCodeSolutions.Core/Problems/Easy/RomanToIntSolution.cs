@@ -22,7 +22,7 @@ namespace LeetCodeSolutions.Core.Problems.Easy;
 
 public class RomanToIntSolution
 {
-    public int RomanToInt(string s)
+    public static int RomanToInt(string s)
     {
         static int Value(char c) => c switch
         {

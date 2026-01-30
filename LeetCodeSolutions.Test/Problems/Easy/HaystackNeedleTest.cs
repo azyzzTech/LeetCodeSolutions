@@ -21,6 +21,8 @@
 /// Space Complexity: $O(1)$ for naive or $O(m)$ for KMP to store the prefix table.
 /// </remarks>
 
+using static LeetCodeSolutions.Core.Problems.Easy.HaystackNeedleSolution;
+
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class HaystackNeedleTest
@@ -32,8 +34,5 @@ public class HaystackNeedleTest
     [InlineData("aaaaa", "bba", -1)]
     [InlineData("abc", "", 0)]
     public void StrStr_ReturnsExpectedIndex(string haystack, string needle, int expected)
-    {
-        var result = Core.Problems.Easy.HaystackNeedleSolution.StrStr(haystack, needle);
-        Assert.Equal(expected, result);
-    }
+        => Assert.Equal(expected, StrStr(haystack, needle));
 }

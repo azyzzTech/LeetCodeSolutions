@@ -18,6 +18,8 @@
 /// Space Complexity: $O(1)$ - No extra space proportional to input.
 /// </remarks>
 
+using static LeetCodeSolutions.Core.Problems.Easy.LongestCommonPrefixSolution;
+
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class LongestCommonPrefixTest
@@ -29,8 +31,5 @@ public class LongestCommonPrefixTest
     [InlineData(new string[] { "a" }, "a")]
     [InlineData(new string[] { "", "" }, "")]
     public void LongestCommonPrefix_ReturnsExpectedPrefix(string[] strs, string expected)
-    {
-        var result = Core.Problems.Easy.LongestCommonPrefixSolution.LongestCommonPrefix(strs);
-        Assert.Equal(expected, result);
-    }
+        => Assert.Equal(expected, LongestCommonPrefix(strs));
 }

@@ -26,7 +26,7 @@ namespace LeetCodeSolutions.Core.Problems.Easy;
 
 public class ClimbStairsSolution
 {
-    public int ClimbStairs(int n)
+    public static int ClimbStairs(int n)
     {
         if (n <= 2)
             return n;

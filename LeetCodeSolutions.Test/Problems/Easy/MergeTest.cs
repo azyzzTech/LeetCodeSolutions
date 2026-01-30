@@ -25,6 +25,8 @@
 /// Space Complexity: $O(1)$ - No extra space is used as we modify nums1 in-place.
 /// </remarks>
 
+using static LeetCodeSolutions.Core.Problems.Easy.MergeSolution;
+
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class MergeTest
@@ -34,11 +36,9 @@ public class MergeTest
     [InlineData(new int[] { 1 }, 1, new int[] { }, 0, new int[] { 1 })]
     [InlineData(new int[] { 0 }, 0, new int[] { 1 }, 1, new int[] { 1 })]
     [InlineData(new int[] { 2, 0 }, 1, new int[] { 1 }, 1, new int[] { 1, 2 })]
-    public void Merge_MergesArraysCorrectly(int[] nums1, int m, int[] nums2, int n, int[] expected)
-    {
-        var nums1Copy = (int[])nums1.Clone();
-        var solution = new Core.Problems.Easy.MergeSolution();
-        solution.Merge(nums1Copy, m, nums2, n);
-        Assert.Equal(expected, nums1Copy);
-    }
+    public void Merge_MergesArraysCorrectly(int[] nums1, int m, int[] nums2, int n, int[] expected) 
+        => Assert.All(new Action[] {
+            () => Merge(nums1, m, nums2, n),
+            () => Assert.Equal(expected, nums1)
+        }, action => action());
 }

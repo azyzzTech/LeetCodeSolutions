@@ -29,7 +29,7 @@ namespace LeetCodeSolutions.Core.Problems.Easy;
 
 public class MergeSolution
 {
-    public void Merge(int[] nums1, int m, int[] nums2, int n)
+    public static void Merge(int[] nums1, int m, int[] nums2, int n)
     {
         int i = m - 1;
         int j = n - 1;

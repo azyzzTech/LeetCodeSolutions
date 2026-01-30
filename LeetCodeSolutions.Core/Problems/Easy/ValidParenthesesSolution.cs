@@ -27,7 +27,7 @@ namespace LeetCodeSolutions.Core.Problems.Easy;
 
 public class ValidParenthesesSolution
 {
-    public bool IsValid(string s)
+    public static bool IsValid(string s)
     {
         if (s.Length % 2 != 0)
             return false;

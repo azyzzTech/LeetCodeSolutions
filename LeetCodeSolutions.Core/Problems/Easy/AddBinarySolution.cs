@@ -27,7 +27,7 @@ namespace LeetCodeSolutions.Core.Problems.Easy;
 
 public class AddBinarySolution
 {
-    public string AddBinary(string a, string b)
+    public static string AddBinary(string a, string b)
     {
         StringBuilder result = new StringBuilder();
 

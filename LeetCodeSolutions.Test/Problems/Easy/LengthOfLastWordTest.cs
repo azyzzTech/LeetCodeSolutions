@@ -19,6 +19,8 @@
 /// Space Complexity: $O(1)$ - Constant space used.
 /// </remarks>
 
+using static LeetCodeSolutions.Core.Problems.Easy.LengthOfLastWordSolution;
+
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class LengthOfLastWordTest
@@ -30,8 +32,5 @@ public class LengthOfLastWordTest
     [InlineData("a", 1)]
     [InlineData("day  ", 3)]
     public void LengthOfLastWord_ReturnsExpectedLength(string s, int expected)
-    {
-        var result = Core.Problems.Easy.LengthOfLastWordSolution.LengthOfLastWord(s);
-        Assert.Equal(expected, result);
-    }
+        => Assert.Equal(expected, LengthOfLastWord(s));
 }

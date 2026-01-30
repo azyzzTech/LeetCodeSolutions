@@ -22,6 +22,8 @@
 /// Space Complexity: $O(1)$ - Only a few variables are used to track min price and max profit.
 /// </remarks>
 
+using static LeetCodeSolutions.Core.Problems.Easy.MaxProfitSolution;
+
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class MaxProfitTest
@@ -33,8 +35,5 @@ public class MaxProfitTest
     [InlineData(new int[] { 1, 2 }, 1)]
     [InlineData(new int[] { 3, 3, 3, 3 }, 0)]
     public void MaxProfit_ReturnsExpectedProfit(int[] prices, int expected)
-    {
-        var result = Core.Problems.Easy.MaxProfitSolution.MaxProfit(prices);
-        Assert.Equal(expected, result);
-    }
+        => Assert.Equal(expected, MaxProfit(prices));
 }
