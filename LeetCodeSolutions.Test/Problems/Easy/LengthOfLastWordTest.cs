@@ -19,9 +19,19 @@
 /// Space Complexity: $O(1)$ - Constant space used.
 /// </remarks>
 
-
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class LengthOfLastWordTest
 {
+    [Theory]
+    [InlineData("Hello World", 5)]
+    [InlineData("   fly me   to   the moon  ", 4)]
+    [InlineData("luffy is still joyboy", 6)]
+    [InlineData("a", 1)]
+    [InlineData("day  ", 3)]
+    public void LengthOfLastWord_ReturnsExpectedLength(string s, int expected)
+    {
+        var result = Core.Problems.Easy.LengthOfLastWordSolution.LengthOfLastWord(s);
+        Assert.Equal(expected, result);
+    }
 }
