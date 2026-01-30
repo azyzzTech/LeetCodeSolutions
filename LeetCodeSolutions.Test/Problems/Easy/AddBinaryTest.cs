@@ -21,9 +21,20 @@
 /// Space Complexity: $O(\max(N, M))$ - To store the result in a StringBuilder or character array.
 /// </remarks>
 
-
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class AddBinaryTest
 {
+    [Theory]
+    [InlineData("11", "1", "100")]
+    [InlineData("1010", "1011", "10101")]
+    [InlineData("0", "0", "0")]
+    [InlineData("1", "0", "1")]
+    [InlineData("111", "111", "1110")]
+    public void AddBinary_ReturnsExpectedResult(string a, string b, string expected)
+    {
+        var solution = new Core.Problems.Easy.AddBinarySolution();
+        var result = solution.AddBinary(a, b);
+        Assert.Equal(expected, result);
+    }
 }
