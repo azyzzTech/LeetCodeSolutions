@@ -22,9 +22,19 @@
 /// Space Complexity: $O(1)$ - We only need to store the last two calculated values (iterative approach).
 /// </remarks>
 
-
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class ClimbStairsTest
 {
+    [Theory]
+    [InlineData(2, 2)]
+    [InlineData(3, 3)]
+    [InlineData(4, 5)]
+    [InlineData(5, 8)]
+    public void ClimbStairs_ReturnsExpectedResult(int n, int expected)
+    {
+        var solution = new Core.Problems.Easy.ClimbStairsSolution();
+        var result = solution.ClimbStairs(n);
+        Assert.Equal(expected, result);
+    }
 }
