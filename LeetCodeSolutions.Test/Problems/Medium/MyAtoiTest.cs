@@ -22,20 +22,9 @@
 /// Space Complexity: $O(1)$ - Only a constant amount of space is used to store the sign and the result.
 /// </remarks>
 
+
 namespace LeetCodeSolutions.Test.Problems.Medium;
 
 public class MyAtoiTest
 {
-    [Fact]
-    public void MethodUnderTest_ExpectedBehavior_StateUnderTest()
-    {
-        // Arrange
-
-
-        // Act
-
-
-        // Assert
-
-    }
 }

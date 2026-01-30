@@ -25,20 +25,9 @@
 /// Space Complexity: $O(1)$ - No extra space is used as we modify nums1 in-place.
 /// </remarks>
 
+
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class MergeTest
 {
-    [Fact]
-    public void MethodUnderTest_ExpectedBehavior_StateUnderTest()
-    {
-        // Arrange
-
-
-        // Act
-
-
-        // Assert
-
-    }
 }

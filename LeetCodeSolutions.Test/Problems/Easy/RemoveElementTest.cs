@@ -22,20 +22,9 @@
 /// Space Complexity: $O(1)$ - Modification is done in-place.
 /// </remarks>
 
+
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class RemoveElementTest
 {
-    [Fact]
-    public void MethodUnderTest_ExpectedBehavior_StateUnderTest()
-    {
-        // Arrange
-
-
-        // Act
-
-
-        // Assert
-
-    }
 }

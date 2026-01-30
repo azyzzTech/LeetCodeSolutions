@@ -22,20 +22,9 @@
 /// Space Complexity: $O(1)$ - Only a few variables are used to track min price and max profit.
 /// </remarks>
 
+
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class MaxProfitTest
 {
-    [Fact]
-    public void MethodUnderTest_ExpectedBehavior_StateUnderTest()
-    {
-        // Arrange
-
-
-        // Act
-
-
-        // Assert
-
-    }
 }

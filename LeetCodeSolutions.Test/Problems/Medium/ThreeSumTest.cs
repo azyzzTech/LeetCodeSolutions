@@ -20,20 +20,9 @@
 /// Space Complexity: $O(n)$ or $O(\log n)$ - Depending on the sorting implementation.
 /// </remarks>
 
+
 namespace LeetCodeSolutions.Test.Problems.Medium;
 
 public class ThreeSumTest
 {
-    [Fact]
-    public void MethodUnderTest_ExpectedBehavior_StateUnderTest()
-    {
-        // Arrange
-
-
-        // Act
-
-
-        // Assert
-
-    }
 }

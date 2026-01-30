@@ -19,20 +19,9 @@
 /// Space Complexity: $O(1)$ - Constant space used.
 /// </remarks>
 
+
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class LengthOfLastWordTest
 {
-    [Fact]
-    public void MethodUnderTest_ExpectedBehavior_StateUnderTest()
-    {
-        // Arrange
-
-
-        // Act
-
-
-        // Assert
-
-    }
 }

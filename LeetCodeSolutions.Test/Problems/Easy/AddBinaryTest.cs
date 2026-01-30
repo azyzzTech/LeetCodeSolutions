@@ -21,20 +21,9 @@
 /// Space Complexity: $O(\max(N, M))$ - To store the result in a StringBuilder or character array.
 /// </remarks>
 
+
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class AddBinaryTest
 {
-    [Fact]
-    public void MethodUnderTest_ExpectedBehavior_StateUnderTest()
-    {
-        // Arrange
-
-
-        // Act
-
-
-        // Assert
-
-    }
 }

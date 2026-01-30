@@ -24,20 +24,9 @@
 /// Space Complexity: $O(1)$ - Only a constant amount of extra space is used for pointers and variables.
 /// </remarks>
 
+
 namespace LeetCodeSolutions.Test.Problems.Hard;
 
 public class FindMedianSortedArraysTest
 {
-    [Fact]
-    public void MethodUnderTest_ExpectedBehavior_StateUnderTest()
-    {
-        // Arrange
-
-
-        // Act
-
-
-        // Assert
-
-    }
 }

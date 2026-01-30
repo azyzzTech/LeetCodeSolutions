@@ -20,20 +20,9 @@
 /// Space Complexity: $O(\log n)$ to $O(n)$ - Space used for sorting.
 /// </remarks>
 
+
 namespace LeetCodeSolutions.Test.Problems.Medium;
 
 public class ThreeSumClosestTest
 {
-    [Fact]
-    public void MethodUnderTest_ExpectedBehavior_StateUnderTest()
-    {
-        // Arrange
-
-
-        // Act
-
-
-        // Assert
-
-    }
 }

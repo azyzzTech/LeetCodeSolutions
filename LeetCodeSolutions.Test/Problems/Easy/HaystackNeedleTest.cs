@@ -21,20 +21,9 @@
 /// Space Complexity: $O(1)$ for naive or $O(m)$ for KMP to store the prefix table.
 /// </remarks>
 
+
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class HaystackNeedleTest
 {
-    [Fact]
-    public void MethodUnderTest_ExpectedBehavior_StateUnderTest()
-    {
-        // Arrange
-
-
-        // Act
-
-
-        // Assert
-
-    }
 }

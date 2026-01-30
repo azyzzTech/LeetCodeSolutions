@@ -23,20 +23,9 @@
 /// Space Complexity: $O(1)$ - Only a constant amount of extra space is used for pointers.
 /// </remarks>
 
+
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class SearchInsertTest
 {
-    [Fact]
-    public void MethodUnderTest_ExpectedBehavior_StateUnderTest()
-    {
-        // Arrange
-
-
-        // Act
-
-
-        // Assert
-
-    }
 }

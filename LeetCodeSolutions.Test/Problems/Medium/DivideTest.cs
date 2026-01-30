@@ -21,20 +21,9 @@
 /// Space Complexity: $O(1)$ - No extra data structures used.
 /// </remarks>
 
+
 namespace LeetCodeSolutions.Test.Problems.Medium;
 
 public class DivideTest
 {
-    [Fact]
-    public void MethodUnderTest_ExpectedBehavior_StateUnderTest()
-    {
-        // Arrange
-
-
-        // Act
-
-
-        // Assert
-
-    }
 }

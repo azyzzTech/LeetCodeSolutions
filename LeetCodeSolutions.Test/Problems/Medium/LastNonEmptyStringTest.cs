@@ -23,20 +23,9 @@
 /// Space Complexity: O(1) - Uses a fixed-size array (26 integers) to store character frequencies.
 /// </remarks>
 
+
 namespace LeetCodeSolutions.Test.Problems.Medium;
 
 public class LastNonEmptyStringTest
 {
-    [Fact]
-    public void MethodUnderTest_ExpectedBehavior_StateUnderTest()
-    {
-        // Arrange
-
-
-        // Act
-
-
-        // Assert
-
-    }
 }

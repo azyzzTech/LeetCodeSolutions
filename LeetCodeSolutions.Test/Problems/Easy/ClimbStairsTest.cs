@@ -22,20 +22,9 @@
 /// Space Complexity: $O(1)$ - We only need to store the last two calculated values (iterative approach).
 /// </remarks>
 
+
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class ClimbStairsTest
 {
-    [Fact]
-    public void MethodUnderTest_ExpectedBehavior_StateUnderTest()
-    {
-        // Arrange
-
-
-        // Act
-
-
-        // Assert
-
-    }
 }
