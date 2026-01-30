@@ -40,7 +40,7 @@ public class MySqrtSolution
         {
             int middle = left + (right - left) / 2;
 
-            if (left <= x / middle)
+            if (middle <= x / middle)
             {
                 result = middle;
                 left = middle + 1;

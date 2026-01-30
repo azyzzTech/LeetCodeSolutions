@@ -23,9 +23,20 @@
 /// Space Complexity: $O(1)$ - Only a constant amount of extra space is used.
 /// </remarks>
 
-
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class MySqrtTest
 {
+    [Theory]
+    [InlineData(4, 2)]
+    [InlineData(8, 2)]
+    [InlineData(0, 0)]
+    [InlineData(1, 1)]
+    [InlineData(16, 4)]
+    [InlineData(2147395599, 46339)]
+    public void MySqrt_ReturnsExpectedResult(int x, int expected)
+    {
+        var result = Core.Problems.Easy.MySqrtSolution.MySqrt(x);
+        Assert.Equal(expected, result);
+    }
 }
