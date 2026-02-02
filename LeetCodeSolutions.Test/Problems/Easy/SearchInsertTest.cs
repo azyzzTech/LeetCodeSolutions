@@ -23,9 +23,16 @@
 /// Space Complexity: $O(1)$ - Only a constant amount of extra space is used for pointers.
 /// </remarks>
 
+using static LeetCodeSolutions.Core.Problems.Easy.SearchInsertSolution;
 
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class SearchInsertTest
 {
+    [Theory]
+    [InlineData(new int[] { 1, 3, 5, 6 }, 5, 2)]
+    [InlineData(new int[] { 1, 3, 5, 6 }, 2, 1)]
+    [InlineData(new int[] { 1, 3, 5, 6 }, 7, 4)]
+    public void SearchInsert_ReturnsExpectedResult(int[] nums, int target, int expected)
+        => Assert.Equal(expected, SearchInsert(nums, target));
 }

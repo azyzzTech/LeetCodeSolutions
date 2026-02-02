@@ -23,9 +23,16 @@
 /// Space Complexity: $O(n)$ - In the worst case (e.g., all opening brackets), we push all characters onto the stack.
 /// </remarks>
 
+using static LeetCodeSolutions.Core.Problems.Easy.ValidParenthesesSolution;
 
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class ValidParenthesesTest
 {
+    [Theory]
+    [InlineData("()", true)]
+    [InlineData("()[]{}", true)]
+    [InlineData("(]", false)]
+    public void IsValid_ReturnsExpectedResult(string s, bool expected)
+        => Assert.Equal(expected, IsValid(s));
 }

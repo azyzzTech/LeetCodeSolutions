@@ -20,9 +20,19 @@
 /// Space Complexity: $O(1)$ - Modification is done in-place.
 /// </remarks>
 
+using static LeetCodeSolutions.Core.Problems.Easy.RemoveDuplicatesSolution;
 
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class RemoveDuplicatesTest
 {
+    [Theory]
+    [InlineData(new int[] { 1, 1, 2 }, 2, new int[] { 1, 2 })]
+    [InlineData(new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 }, 5, new int[] { 0, 1, 2, 3, 4 })]
+    public void RemoveDuplicates_ReturnsExpectedResult(int[] nums, int expectedLength, int[] expectedNums)
+    {
+        int length = RemoveDuplicates(nums);
+        Assert.Equal(expectedLength, length);
+        Assert.Equal(expectedNums, nums[..length]);
+    }
 }

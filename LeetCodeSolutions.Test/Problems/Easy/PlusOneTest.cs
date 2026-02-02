@@ -25,9 +25,16 @@
 /// Space Complexity: $O(n)$ - Usually $O(1)$ if we modify in-place, but $O(n)$ when all digits are 9 and a new array is required.
 /// </remarks>
 
+using static LeetCodeSolutions.Core.Problems.Easy.PlusOneSolution;
 
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class PlusOneTest
 {
+    [Theory]
+    [InlineData(new int[] { 1, 2, 3 }, new int[] { 1, 2, 4 })]
+    [InlineData(new int[] { 4, 3, 2, 1 }, new int[] { 4, 3, 2, 2 })]
+    [InlineData(new int[] { 9 }, new int[] { 1, 0 })]
+    public void PlusOne_ReturnsExpectedResult(int[] digits, int[] expected)
+        => Assert.Equal(expected, PlusOne(digits));
 }

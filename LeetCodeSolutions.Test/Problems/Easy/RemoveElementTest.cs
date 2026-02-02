@@ -22,9 +22,23 @@
 /// Space Complexity: $O(1)$ - Modification is done in-place.
 /// </remarks>
 
+using static LeetCodeSolutions.Core.Problems.Easy.RemoveElementSolution;
 
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class RemoveElementTest
 {
+    [Theory]
+    [InlineData(new int[] { 3, 2, 2, 3 }, 3, 2, new int[] { 2, 2 })]
+    [InlineData(new int[] { 0, 1, 2, 2, 3, 0, 4, 2 }, 2, 5, new int[] { 0, 1, 3, 0, 4 })]
+    public void RemoveElement_ReturnsExpectedResult(int[] nums, int val, int expectedLength, int[] expectedNums)
+    {
+        int length = RemoveElement(nums, val);
+        Assert.Equal(expectedLength, length);
+        
+        var result = nums[..length];
+        Array.Sort(result);
+        Array.Sort(expectedNums);
+        Assert.Equal(expectedNums, result);
+    }
 }
