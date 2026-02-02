@@ -20,9 +20,23 @@
 /// Space Complexity: $O(1)$ - Constant space used.
 /// </remarks>
 
+using static LeetCodeSolutions.Core.Problems.Easy.PalindromeNumberSolution;
 
 namespace LeetCodeSolutions.Test.Problems.Easy;
 
 public class PalindromeNumberTest
 {
+    [Theory]
+    [InlineData(121, true)]
+    [InlineData(-121, false)]
+    [InlineData(10, false)]
+    [InlineData(0, true)]
+    [InlineData(1, true)]
+    [InlineData(12321, true)]
+    [InlineData(1221, true)]
+    [InlineData(123, false)]
+    [InlineData(1000, false)]
+    [InlineData(9, true)]
+    public void IsPalindrome_ReturnsExpectedResult(int x, bool expected)
+        => Assert.Equal(expected, IsPalindrome(x));
 }
